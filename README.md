@@ -3,4 +3,4 @@ InterestCalculator
 
 Daily compounding interest calculator
 
-*Demo:* http://rhinolance.github.io/InterestCalculator/
+*Demo:* https://rhinolance.github.io/InterestCalculator/
