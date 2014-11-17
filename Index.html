@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="ngInterestCalc" ng-controller="AppCtrl">
+    <head>
+        <title ng-bind="pageTitle">Interest Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+
+        <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
+        <script type="text/javascript" src="base.js"></script>
+
+        <style>
+            body{
+                margin: 20px 20px 20px 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="panel panel-warning">
+            <div class="panel-heading"><h1>Daily compounding interest calculator</h1></div>
+            <div class="panel-body">
+               <form class="form-horizontal controls span6">
+                    <div class="form-group">
+                        <label for="principal" class="col-sm-3 control-label">Principal Amount ($)</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" ng-model="formData.principal" placeholder="Principal Amount" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="rate" class="col-sm-3 control-label">Interest Rate (%)</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" ng-model="formData.rate" placeholder="Interest rate (%)" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="days" class="col-sm-3 control-label">Days overdue</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" ng-model="formData.daysOverdue" placeholder="Days overdue" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="result" class="col-sm-3 control-label">Interest</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="btn-info form-control" value="${{resultData.interest}}" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="result" class="col-sm-3 control-label">Total</label>
+                        <div class="col-sm-2">
+                            <input type="text" class="btn-warning form-control" value="${{resultData.total}}" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
